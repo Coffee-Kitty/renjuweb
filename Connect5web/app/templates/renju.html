@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>coffeecat的演示小站</title>
+        <link rel="stylesheet" type="text/css" href="./css/renju.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="left_panel">
+                <h3 class="title">--Gomoku--</h3>
+                <div><a>制作人:coffeecat</a></div>
+                <canvas class="chess" width="550" height="500"></canvas>
+            </div>
+            <div class="right_panel">
+                <textarea placeholder="Gomoku游戏规则"></textarea>
+                <div class="action-buttons">
+                    <button class="restart"><a class="button-text">重新开始</a></button>
+                    <button class="backup"><a  class="button-text">悔棋</a></button>
+                    <button class="select"><a  class="button-text">AI落子</a></button>
+                    <button class="backone"><a  class="button-text" onclick="{window.history.back();}">返回</a></button>
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+    <!-- 导入 player.js -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/renju.js"></script>
+</html>
